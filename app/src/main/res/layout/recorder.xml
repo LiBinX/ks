@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bj2"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/linearLayout3"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:background="#444eb9"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageButtonBack"
+            android:src="@drawable/back"
+            android:background="#444eb9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记一笔"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_vertical"
+            android:background="#444eb9"
+            android:layout_marginLeft="80dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:editable="false"
+            android:enabled="false"
+            android:hint="size"
+            android:textIsSelectable="false"
+            android:textSize="20dp"/>
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型"
+            android:id="@+id/texttype"
+
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:clickable="false"
+            android:editable="false"
+            android:textColor="#0472f8"
+            android:layout_weight="0.00"
+            android:layout_marginLeft="57dp"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:id="@+id/texttimeshow"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#0472f8"
+            android:layout_below="@+id/texttype"
+            android:layout_toLeftOf="@+id/spinner_type"
+            android:layout_toStartOf="@+id/spinner_type"
+            android:layout_marginTop="44dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="费用"
+            android:id="@+id/textfeeshow"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#0472f8"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/edit_text_time"
+            android:layout_toLeftOf="@+id/spinner_type"
+            android:layout_toStartOf="@+id/spinner_type"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注"
+            android:id="@+id/textremarksshow"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#0472f8"
+            android:layout_marginTop="27dp"
+            android:layout_below="@+id/editText_fee"
+            android:layout_toLeftOf="@+id/spinner_type"
+            android:layout_toStartOf="@+id/spinner_type"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/spinner_type"
+            android:spinnerMode="dialog"
+            android:entries="@array/Select_item"
+            android:layout_alignBottom="@+id/texttype"
+            android:layout_toRightOf="@+id/texttype"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical|center"
+            android:paddingLeft="50dp"
+            android:touchscreenBlocksFocus="false"
+            android:layout_alignParentLeft="false"
+            style="@android:style/TextAppearance.Holo"/>
+
+        <TextView
+            android:id="@+id/edit_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_alignTop="@+id/texttimeshow"
+            android:layout_alignLeft="@+id/spinner_type"
+            android:layout_alignStart="@+id/spinner_type"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="50dp"
+            android:editable="true"
+            android:gravity="center"
+            android:textColor="#ffb6c1"/>
+
+        <EditText
+            android:id="@+id/editText_fee"
+            android:editable="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_alignTop="@+id/textfeeshow"
+            android:layout_alignLeft="@+id/edit_text_time"
+            android:layout_alignStart="@+id/edit_text_time"
+            android:layout_marginRight="50dp"
+            android:textColor="#fc0303"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editText_remarks"
+            android:layout_width="fill_parent"
+            android:layout_height="94dp"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:gravity="left|top"
+            android:width="2dip"
+            android:background="@android:drawable/edit_text"
+            android:layout_alignTop="@+id/textremarksshow"
+            android:layout_alignLeft="@+id/editText_fee"
+            android:layout_alignStart="@+id/editText_fee"
+            android:layout_marginRight="50dp"
+            android:textColor="#5e5b5b"
+            android:textSize="15dp"/>
+
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="保存"
+            android:id="@+id/plan_sure"
+            android:background="@drawable/buttonshape"
+
+            android:layout_below="@+id/editText_remarks"
+            android:layout_alignLeft="@+id/texttype"
+            android:layout_alignStart="@+id/texttype"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="100dp"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="取消"
+            android:id="@+id/button_cancel"
+            android:background="@drawable/buttonshape"
+            android:layout_alignTop="@+id/plan_sure"
+            android:layout_alignRight="@+id/editText_remarks"
+            android:layout_alignEnd="@+id/editText_remarks"
+            android:layout_marginRight="40dp"/>
+
+    <!-- android:layout_below属性会将当前控件的顶部置于给定ID的控件之下，
+    但并不会与给定ID的控件对齐，默认会放在父控件的最左边-->
+    <!-- 可通过android:layout_alignLeft、android:layout_alignRight等
+    对齐属性改变当前控件设置android:layout_below属性后的默认位置-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/radioGroup"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:id="@+id/radioButton"
+            android:checked="false"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignLeft="@+id/texttimeshow"
+            android:layout_alignStart="@+id/texttimeshow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出"
+            android:id="@+id/radioButton2"
+            android:checked="false"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

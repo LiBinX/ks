@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--RecyclerView滑动组件，与经典的ListView相比，
+    同样拥有item回收复用的功能,也能实现横向滚动的ListView,
+    横向滚动的GridView, 瀑布流控件-->
+    <!--divider分割线-->
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/id_recyclerview"
+    android:divider="#ffff0000"
+    android:dividerHeight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+</RelativeLayout>

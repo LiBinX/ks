@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额"
+        android:textColor="@android:color/black"
+        android:textSize="19dp"
+        android:layout_marginLeft="90dp"
+        android:layout_alignBottom="@+id/textremainder"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp"
+        android:id="@+id/textView4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19.8"
+        android:textSize="19dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textremainder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentLeft="false"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="120dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前本月支出"
+        android:textColor="@android:color/black"
+        android:textSize="19dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textColor="@android:color/black"
+        android:textSize="19dp"
+        android:id="@+id/textpay"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/textremainder"
+        android:layout_alignStart="@+id/textremainder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本月收入"
+        android:textSize="19dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7000"
+        android:textSize="19dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/textincome"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignLeft="@+id/textpay"
+        android:layout_alignStart="@+id/textpay"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tj"
+        />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+      android:textSize="17dp"
+        android:text="记账"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textremainder"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/textincome"
+        android:layout_toRightOf="@+id/textincome"
+        android:background= "@drawable/a" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textpay"
+        android:layout_alignLeft="@+id/textpay"
+        android:layout_alignStart="@+id/imageView"
+        android:background="@drawable/b" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignTop="@+id/textincome"
+        android:layout_marginTop="0.5dp"
+        android:background="@drawable/c" />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!--用于垂直滚动展示两级列表的视图，和 ListView 的
+    不同之处就是它可以展示两级列表，分组可以单独展开显示子选项-->
+    <ExpandableListView
+        android:id="@+id/expandable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

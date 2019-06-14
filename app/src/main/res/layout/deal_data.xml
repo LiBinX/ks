@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.dell.app.MainActivity"
+    android:background="@drawable/bj1">
+    <!--paddingBottom控件中内容距离控件底边距离-->
+    <!--tools:contextlayout当前提供给了哪个activity使用，从而实时显示这个activity所设置的样式效果-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/frameLayoutRecorder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/notice"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="记账"
+            android:id="@+id/textView"
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageButton2"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/frameLayoutPlan"
+        android:layout_below="@+id/frameLayoutRecorder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp">
+
+
+        <ImageButton
+            android:background="@drawable/count"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="计划"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutPlan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayoutStream"
+        android:layout_marginTop="3dp">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/water"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="账单"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:textSize="19dp"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/frameLayoutStream"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:id="@+id/frameLayoutChart">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/chart"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="今日天气"
+
+            android:layout_gravity="left"
+            android:layout_marginLeft="80dp"
+            android:autoText="false"
+            android:gravity="center_vertical"
+            android:textSize="19dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="fill_parent"
+
+            android:layout_gravity="right|bottom"
+            android:background="#FFFFFF"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

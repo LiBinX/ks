@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Select_item">
+        <item>衣</item>
+        <item>食 </item>
+        <item>住</item>
+        <item>行</item>
+        <item>其他</item>
+    </string-array>
+</resources>
